@@ -22,25 +22,32 @@ function saveToLocalStorage(event)
     .catch((err) =>{
         console.log(err);
     })
+   
+    
+    // 
+
+    
+
+    
     // localStorage.setItem(obj.email,JSON.stringify(obj))
     
-    showNewUserOnScreen( obj )
+    //showNewUserOnScreen( obj )
     
     
     
 
 }
-window.addEventListener("DOMContentLoaded", () => {
-    const localStorageObj = localStorage;
-    const localStorageKeys = Object.keys(localStorageObj);
+// window.addEventListener("DOMContentLoaded", () => {
+//     const localStorageObj = localStorage;
+//     const localStorageKeys = Object.keys(localStorageObj);
 
-    for (let i =0; i<localStorageKeys.length; i++){
-        const key = localStorageKeys[i];
-        const userDetailsString = localStorageObj[key];
-        const userDetailsObj = JSON.parse(userDetailsString);
-        showNewUserOnScreen(userDetailsObj)
-    }
-   });
+//     for (let i =0; i<localStorageKeys.length; i++){
+//         const key = localStorageKeys[i];
+//         const userDetailsString = localStorageObj[key];
+//         const userDetailsObj = JSON.parse(userDetailsString);
+//         showNewUserOnScreen(userDetailsObj)
+//     }
+//    });
 
 
 
@@ -65,6 +72,21 @@ function showNewUserOnScreen(user){
     parentNode.innerHTML = parentNode.innerHTML + childHTML;
 
 }
+
+
+
+// window.addEventListener("DOMContentLoaded",async(event) =>{
+//     try{
+//         event.preventDefault();
+        
+//         let get = await axios.get("https://crudcrud.com/api/73d5fa9e86af4de3bcf0a9a9a4cf0d3b/appointmentData");
+//         console.log(get);
+//     }
+//     catch{ (error) =>{
+//         console.log(error);
+//     }
+// }
+// } )
 
 //Edit User
 
