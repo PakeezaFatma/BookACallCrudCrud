@@ -1,0 +1,50 @@
+body {
+    background-image: url('computers-mails-screen-communication.jpg');
+    display: flex;
+    align-items: center;
+    /* text-align: center; */
+    justify-content: center;
+    /* place-items: center; */
+}
+
+form {
+    align-items: center;
+    /* text-align: center; */
+}
+
+.container {
+    background-color: #fff;
+    width: 40%;
+    
+    /* text-align: center; */
+    padding: 10px;
+    border: solid 2px red;
+    padding:20px 20px 20px 20px;
+    border-radius: 5px;
+    box-shadow: 10px;
+    
+}
+.inputs
+{
+    width: 100%;
+    height: 25px;
+    border: solid 2px grey;
+    border-radius:3px;
+}
+hr{
+    width:"100%" ;
+    border: solid 1px grey;
+  
+}
+.datetime
+{
+    width: 48%;
+    padding: 0 3px;
+    height: 28px;
+    border: solid 2px grey;
+    border-radius:3px;
+}
+label{
+    font-size: 16px;
+    color:grey;
+}

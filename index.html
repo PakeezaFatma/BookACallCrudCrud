@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    
+    <title>Document</title>
+    
+</head>
+
+<body>
+    
+    <div class="container">
+        <form  onsubmit="saveToLocalStorage(event)">
+            <h2 style="color: rgb(255, 4, 0); text-align: center;">Book Call</h2>
+            <h5 style="text-align:center">
+                Book a call slot and our reprensentive with call you 1 hr of selectd time.
+            </h5>
+            <hr >
+            <label for="name">Name:</label>
+            <input type="text" id="username" name="username"  class="inputs" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="emailId"   class="inputs" required><br><br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" class="inputs"><br><br>
+            <label for="date">Time for Call:</label><br>
+            <input type="date" id="date" name="date" class="datetime">
+
+            <input type="time" id="time" name="time"  class="datetime"><br><br>
+            <input type="submit"  class="inputs" style="height: 35px; background-color:rgb(255, 4, 0); border:rgb(255, 4, 0); border-radius: 10px;color:#fff">
+        </form>
+
+        <ul id='listOfUsers'></ul>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.2/axios.min.js
+
+
+
+"></script>
+    <script src="book.js"></script>
+
+</body>
+
+</html>
