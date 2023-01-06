@@ -73,6 +73,19 @@ function showNewUserOnScreen(user){
 
 }
 
+window.addEventListener("DOMContentLoaded", () => {
+    axios.get("https://crudcrud.com/api/73d5fa9e86af4de3bcf0a9a9a4cf0d3b/appointmentData")
+    .then((response) =>{
+        console.log(response);
+        for(var i=0; i < response.data.length;i++)
+        {
+            showNewUserOnScreen(response.data[i]); 
+        }
+    })
+    .catch((error) =>{
+        console.log(error)
+    })
+      })
 
 
 // window.addEventListener("DOMContentLoaded",async(event) =>{
